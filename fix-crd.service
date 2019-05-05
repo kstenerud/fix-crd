@@ -1,0 +1,10 @@
+[Unit]
+Description=Fix chrome remote desktop
+
+[Service]
+ExecStart=/opt/fix-crd/fix-crd.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
